@@ -1,38 +1,93 @@
-.App {
-  text-align: center;
+
+body {
+  background: linear-gradient(135deg, #e0eafc 0%, #cfdef3 100%);
+  color: #222;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navbar {
+  background: linear-gradient(90deg, #007bff 0%, #00c6ff 100%);
+  color: #fff;
+}
+.navbar-brand, .navbar-nav .nav-link {
+  color: #fff !important;
+  font-weight: bold;
+}
+.navbar-brand img {
+  height: 40px;
+  margin-right: 10px;
+  vertical-align: middle;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.card {
+  background: #f8f9fa;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+.card-title {
+  color: #007bff;
+  font-weight: 600;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.table {
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.table th {
+  background: #007bff;
+  color: #fff;
+}
+.table-striped tbody tr:nth-of-type(odd) {
+  background: #e9f7fe;
+}
+
+.btn-primary, .btn-info, .btn-success, .btn-warning, .btn-secondary {
+  border-radius: 20px;
+  font-weight: 500;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+}
+.btn-primary {
+  background: linear-gradient(90deg, #007bff 0%, #00c6ff 100%);
+  border: none;
+}
+.btn-info {
+  background: linear-gradient(90deg, #17a2b8 0%, #00c6ff 100%);
+  border: none;
+}
+.btn-success {
+  background: linear-gradient(90deg, #28a745 0%, #00c6ff 100%);
+  border: none;
+}
+.btn-warning {
+  background: linear-gradient(90deg, #ffc107 0%, #00c6ff 100%);
+  border: none;
+  color: #222;
+}
+.btn-secondary {
+  background: linear-gradient(90deg, #6c757d 0%, #00c6ff 100%);
+  border: none;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: 500;
+}
+a:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+h1, h2, h3, h4, h5 {
+  color: #007bff;
+  font-weight: 700;
+}
+
+/* Logo left alignment */
+.octofit-logo {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: flex-start;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+/* Favicon is handled by public/favicon.ico */
